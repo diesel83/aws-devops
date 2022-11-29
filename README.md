@@ -32,3 +32,10 @@ pip3 install ansible --user
 python3 -m pip show ansible
 ```
 
+## Terraform
+
+Create a bucket for terraform backend state
+```bash
+aws s3api create-bucket --bucket tfstatedevops
+
+```
