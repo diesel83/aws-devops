@@ -12,3 +12,8 @@ variable "region-worker" {
   type    = string
   default = "us-west-2"
 }
+
+variable "public_ip" {
+  type    = string
+  default = "98.197.74.40/32"
+}
