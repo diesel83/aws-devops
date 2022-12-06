@@ -17,3 +17,13 @@ variable "public_ip" {
   type    = string
   default = "98.197.74.40/32"
 }
+
+variable "worker-count" {
+  type = number
+  default = 1
+}
+
+variable "instance_type" {
+  type = string
+  default = "t3.micro"
+}
