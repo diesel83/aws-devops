@@ -19,11 +19,11 @@ variable "public_ip" {
 }
 
 variable "worker-count" {
-  type = number
+  type    = number
   default = 1
 }
 
 variable "instance_type" {
-  type = string
+  type    = string
   default = "t3.micro"
 }
