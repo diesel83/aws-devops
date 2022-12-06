@@ -23,7 +23,7 @@ variable "worker-count" {
   default = 1
 }
 
-variable "instance_type" {
+variable "instance-type" {
   type    = string
   default = "t3.micro"
 }

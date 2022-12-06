@@ -45,7 +45,7 @@ resource "aws_instance" "jenkins-master" {
 # Create ec2 in us-west-2
 resource "aws_instance" "jenkins-worker" {
   provider                    = aws.region-worker
-  count                       = var.workers-count
+  count                       = var.worker-count
   ami                         = data.aws_ssm_parameter.linuxami-worker.value
   instance_type               = var.instance-type
   key_name                    = aws_key_pair.worker-key.key_name
